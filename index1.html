@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 2</title>
+  <title>ACOES | Dashboard 2</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,7 +14,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -72,19 +72,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="estudiante.html" class="nav-link">
+                <a href="modulos/personas/estudiante.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Estudiantes</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="coordinadores.html" class="nav-link">
+                <a href="modulos/personas/coordinadores.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Coordinadores</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="maestro.html" class="nav-link">
+                <a href="modulos/personas/maestro.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Maestros</p>
                 </a>
@@ -109,7 +109,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../inventario/inventario.html" class="nav-link">
+                <a href="modulos/inventario/inventario.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Transporte</p>
                 </a>
@@ -117,38 +117,15 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="modulos/compras/Compras.html" class="nav-link">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Compras
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+          </li>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
+              
             </ul>
           </li>
           <li class="nav-item">
@@ -161,7 +138,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../seguimiento/seguimiento.html" class="nav-link">
+                <a href="modulos/seguimiento/seguimiento.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Proyectos</p>
                 </a>
@@ -209,9 +186,9 @@
               
                 <center>
                   <a class="btn btn-danger btn-sm" href="#" style.display="none">
-                    Salir <br><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    Salir 
                   </a>
-                  <i class="fas fa-angle-left right" ></i>
+                  
                   </center>
               </i>        
                 
@@ -233,10 +210,6 @@
             <h1 class="m-0">Dashboard</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -438,94 +411,7 @@
             <!-- MAP & BOX PANE -->
             
             <!-- /.card -->
-            <div class="row">
-              <div class="col-md-12">
-                <!-- DIRECT CHAT -->
-                <div class="card direct-chat direct-chat-warning">
-                  <div class="card-header">
-                    <h3 class="card-title">Avisos y recordatorios</h3>
-
-                    <div class="card-tools">
-                      <span title="3 New Messages" class="badge badge-warning">2</span>
-                      <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                        <i class="fas fa-minus"></i>
-                      </button>
-                      <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body">
-                    <!-- Conversations are loaded here -->
-                    <div class="direct-chat-messages">
-                      <!-- Message. Default to the left -->
-                      <div class="direct-chat-msg">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-left">Alexander Pierce</span>
-                          <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                        </div>
-                        <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          Entregas de notas del parcial a nivel de primaria y secundaria
-                        </div>
-                        <!-- /.direct-chat-text -->
-                      </div>
-                      <!-- /.direct-chat-msg -->
-
-                      <!-- Message to the right -->
-                      <div class="direct-chat-msg right">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-right">Sarah Bullock</span>
-                          <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                        </div>
-                        <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          Entrega de los pupitres donados por España
-                        </div>
-                        <!-- /.direct-chat-text -->
-                      </div>
-                      <!-- /.direct-chat-msg -->
-
-                      <!-- Message. Default to the left -->
-                      
-                      <!-- /.direct-chat-msg -->
-
-                    </div>
-                    <!--/.direct-chat-messages-->
-
-                    <!-- Contacts are loaded here -->
-                    
-                    <!-- /.direct-chat-pane -->
-                  </div>
-                  <!-- /.card-body -->
-                  <div class="card-footer">
-                    <form action="#" method="post">
-                      <div class="input-group">
-                        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning">Send</button>
-                        </span>
-                      </div>
-                    </form>
-                  </div>
-                  <!-- /.card-footer-->
-                </div>
-                <!--/.direct-chat -->
-              </div>
-              <!-- /.col -->
-
-              <div class="col-md-4">
-                <!-- USERS LIST -->
-                
-                <!--/.card -->
-              </div>
-              <!-- /.col -->
-            </div>
+            
             <!-- /.row -->
 
             <!-- TABLE: LATEST ORDERS -->
@@ -611,7 +497,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer clearfix">
-                <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Agregar historial de compra</a>
+                <a href="modulos/compras/Compras.html" class="btn btn-sm btn-info float-left">Agregar historial de compra</a>
                 <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">Ver todas las compras</a>
               </div>
               <!-- /.card-footer -->
@@ -775,7 +661,7 @@
 <script src="plugins/chart.js/Chart.min.js"></script>
 
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard2.js"></script>
 </body>
