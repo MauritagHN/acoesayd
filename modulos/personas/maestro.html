@@ -83,9 +83,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="/modulos/personas/maestro.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Maestros</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="calificaciones.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Calificaciones</p>
               </a>
             </li>
           </ul>
@@ -108,7 +114,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/modulos/inventario/inventario.html" class="nav-link">
+              <a href="../inventario/inventario.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Inventario</p>
               </a>
@@ -116,7 +122,7 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/modulos/inventario/Transporte.html" class="nav-link">
+              <a href="../inventario/Transporte.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Transporte</p>
               </a>
@@ -124,7 +130,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="/modulos/compras/Compras.html" class="nav-link">
+          <a href="../compras/Compras.html" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>
               Compras
@@ -219,7 +225,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addMaestro">
-                <i class="fa-solid fa-user-plus"></i>Agregar nuevo maestro</button>
+                <i class="fa-solid fa-user-plus"></i>Agregar maestro</button>
             </ol>
           </div>
         </div>
@@ -238,6 +244,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
+                    <th>ID Maestro</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Fecha nacimiento</th>
@@ -249,85 +256,13 @@
                   </thead>
                   <tbody>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.5
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5.5</td>
-                    <td>A</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 6
-                    </td>
-                    <td>Win 98+</td>
-                    <td>6</td>
-                    <td>A</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Misc</td>
-                    <td>PSP browser</td>
-                    <td>PSP</td>
-                    <td>-</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Other browsers</td>
-                    <td>All others</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>5</td>
-                    <td>C</td>
+                    <td>02</td>
+                    <td>Francisco</td>
+                    <td>López</td>
+                    <td>3-04-1973</td>
+                    <td>9700-8800</td>
+                    <td>0801-1973-78342</td>
+                    <td>Las vegas</td>
                     <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
                       <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -337,6 +272,7 @@
                   </tbody>
                   <tfoot>
                   <tr>
+                    <th>ID Maestro</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Fecha nacimiento</th>
@@ -435,11 +371,11 @@
         <form>
           <div class="form-row">
             <div class="col-md-4">
-              <label>Primer nombre</label>
+              <label>ID Maestro</label>
               <input type="text" class="form-control" placeholder="Primer nombre">
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
+              <label>Nombre</label>
               <input type="text" class="form-control" placeholder="Segundo nombre">
             </div>
             <div class="col-md-4">
@@ -496,16 +432,16 @@
         <form>
           <div class="form-row">
             <div class="from-group col-md-4">
-              <label>Primer nombre</label>
-              <input type="text" class="form-control" placeholder="Primer nombre">
+              <label>ID Maestro</label>
+              <input type="text" class="form-control" >
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
-              <input type="text" class="form-control" placeholder="Segundo nombre">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
               <label>Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos">
+              <input type="text" class="form-control">
             </div>
           </div>
 

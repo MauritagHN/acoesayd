@@ -88,6 +88,12 @@
                   <p>Maestros</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="calificaciones.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Calificaciones</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -124,7 +130,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/modulos/compras/Compras.html" class="nav-link">
+            <a href="../compras/Compras.html" class="nav-link">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Compras
@@ -196,7 +202,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addEstudiante">
-                <i class="fa-solid fa-user-plus"></i>Agregar nuevo estudiante</button>
+                <i class="fa-solid fa-user-plus"></i>Agregar estudiante</button>
             </ol>
           </div>
         </div>
@@ -214,14 +220,12 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Primer nombre</th>
-                    <th>Segundo nombre</th>
+                    <th>ID Estudiante</th>
+                    <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Fecha nacimiento</th>
                     <th>Teléfono</th>
                     <th>Identidad</th>
-                    <th>Grado</th>
-                    <th>Materia retrasada</th>
                     <th>Dirección</th>
                     <th>Centro de estudio</th>
                     <th>Acciones</th>
@@ -229,109 +233,14 @@
                   </thead>
                   <tbody>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.5
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5.5</td>
-                    <td>A</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 6
-                    </td>
-                    <td>Win 98+</td>
-                    <td>6</td>
-                    <td>A</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Misc</td>
-                    <td>PSP browser</td>
-                    <td>PSP</td>
-                    <td>-</td>
-                    <td>C</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Other browsers</td>
-                    <td>All others</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
+                    <td>12</td>
+                    <td>Diego Alejandro</td>
+                    <td>Gomez Andino</td>
+                    <td>21-08-2004</td>
+                    <td>9999-9999</td>
+                    <td>0801-2004-01002</td>
+                    <td>Los Llanos</td>
+                    <td>Santa Teresa</td>
                     <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
                       <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editEstudiante"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -340,20 +249,17 @@
                   </tr>
                   </tbody>
                   <tfoot>
-                  <tr>
-                    <th>Primer nombre</th>
-                    <th>Segundo nombre</th>
-                    <th>Apellidos</th>
-                    <th>Fecha nacimiento</th>
-                    <th>Teléfono</th>
-                    <th>Identidad</th>
-                    <th>Grado</th>
-                    <th>Materia retrasada</th>
-                    <th>Dirección</th>
-                    <th>Centro de estudio</th>
-                    <th>Acciones</th>
-                    
-                  </tr>
+                    <tr>
+                      <th>ID Estudiante</th>
+                      <th>Nombre</th>
+                      <th>Apellidos</th>
+                      <th>Fecha nacimiento</th>
+                      <th>Teléfono</th>
+                      <th>Identidad</th>
+                      <th>Dirección</th>
+                      <th>Centro de estudio</th>
+                      <th>Acciones</th>
+                      </tr>
                   </tfoot>
                 </table>
               </div>
@@ -372,9 +278,9 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
+      <b>Version</b>
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright</strong>
   </footer>
 
   <!-- Control Sidebar -->
@@ -443,17 +349,17 @@
       <div class="modal-body">
         <form>
           <div class="form-row">
-            <div class="col-md-4">
-              <label>Primer nombre</label>
-              <input type="text" class="form-control" placeholder="Primer nombre">
+            <div class="from-group col-md-4">
+              <label>ID estudiante</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
-              <input type="text" class="form-control" placeholder="Segundo nombre">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
               <label>Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos">
+              <input type="text" class="form-control">
             </div>
           </div>
 
@@ -473,22 +379,7 @@
           </div>
 
           <div class="form-row">
-
-            <div class="form-group col-md-3">
-              <label for="inputState">Grado</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-3">
-              <label for="inputState">Materia retrasada</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <label for="inputAddress">Dirección</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
@@ -507,8 +398,8 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
       </div>
     </div>
   </div>
@@ -530,16 +421,16 @@
         <form>
           <div class="form-row">
             <div class="from-group col-md-4">
-              <label>Primer nombre</label>
-              <input type="text" class="form-control" placeholder="Primer nombre">
+              <label>ID estudiante</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
-              <input type="text" class="form-control" placeholder="Segundo nombre">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
               <label>Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos">
+              <input type="text" class="form-control">
             </div>
           </div>
 
@@ -559,22 +450,7 @@
           </div>
 
           <div class="form-row">
-
-            <div class="form-group col-md-3">
-              <label for="inputState">Grado</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-3">
-              <label for="inputState">Materia retrasada</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <label for="inputAddress">Dirección</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>

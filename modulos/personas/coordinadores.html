@@ -88,6 +88,12 @@
                 <p>Maestros</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="calificaciones.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Calificaciones</p>
+              </a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
@@ -217,7 +223,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addCoordinador">
-                <i class="fa-solid fa-user-plus"></i>Agregar nuevo coordinador</button>
+                <i class="fa-solid fa-user-plus"></i>Agregar coordinador</button>
             </ol>
           </div>
         </div>
@@ -236,6 +242,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
+                    <th>ID Coordinador</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Tipo coordinador</th>
@@ -248,91 +255,14 @@
                   </thead>
                   <tbody>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.5
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5.5</td>
-                    <td>A</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 6
-                    </td>
-                    <td>Win 98+</td>
-                    <td>6</td>
-                    <td>A</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Misc</td>
-                    <td>PSP browser</td>
-                    <td>PSP</td>
-                    <td>-</td>
-                    <td>C</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Other browsers</td>
-                    <td>All others</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>U</td>
-                    <td>5</td>
-                    <td>C</td>
+                    <td>01</td>
+                    <td>Kevin</td>
+                    <td>Palacios</td>
+                    <td>General</td>
+                    <td>01-01-1996</td>
+                    <td>8799-9999</td>
+                    <td>0801-1996-15174</td>
+                    <td>Los Llanos</td>
                     <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
                       <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -342,6 +272,7 @@
                   </tbody>
                   <tfoot>
                   <tr>
+                    <th>ID Coordinador</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Tipo coordinador</th>
@@ -441,44 +372,44 @@
         <form>
           <div class="form-row">
             <div class="col-md-4">
-              <label>Primer nombre</label>
-              <input type="text" class="form-control" placeholder="Primer nombre">
+              <label>ID Coordinador</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
-              <input type="text" class="form-control" placeholder="Segundo nombre">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
               <label>Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos">
+              <input type="text" class="form-control">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label class="form-label">Fecha nacimiento</label>
-              <input class="form-control input-sm" type="date" id="" required>
-            </div>
-            <div class="col-md-4">
-              <label>Teléfono</label>
-              <input type="text" class="form-control" placeholder="">
-            </div>
-            <div class="col-md-4">
-              <label>Identidad</label>
-              <input type="text" class="form-control" placeholder="">
-            </div>
-          </div>
-
-          <div class="form-row">
-
-            <div class="form-group col-md-3">
               <label for="inputState">Tipo coordinador</label>
               <select id="inputState" class="form-control">
                 <option selected>Selecciona...</option>
                 <option>...</option>
               </select>
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-4">
+              <label class="form-label">Fecha nacimiento</label>
+              <input class="form-control input-sm" type="date" id="" required>
+            </div>
+            <div class="col-md-4">
+              <label>Teléfono</label>
+              <input type="text" class="form-control">
+            </div>
+            
+          </div>
+
+          <div class="form-row">   
+            <div class="col-md-4">
+              <label>Identidad</label>
+              <input type="text" class="form-control">
+            </div>         
+            <div class="form-group col-md-8">
               <label for="inputAddress">Dirección</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
