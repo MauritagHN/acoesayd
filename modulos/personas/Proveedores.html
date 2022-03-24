@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Compras</title>
+  <title>Proveedores</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -93,12 +93,6 @@
                   <a href="/modulos/personas/maestro.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Maestros</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="Proveedores.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Proveedores</p>
                   </a>
                 </li>
               </ul>
@@ -227,12 +221,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Compras</h1>
+              <h1 class="m-0 text-dark">Proveedores</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="/index1.html">Inicio</a></li>
-                <li class="breadcrumb-item active">Compras</li>
+                <li class="breadcrumb-item active">Proveedores</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -253,9 +247,8 @@
               <div class="box">
 
                 <div class="box-header">
-
-                  <button class="btn btn-1 btn-primary" data-toggle="modal" data-target="#compra">Gestionar
-                    Compra</button>
+                  <button class="btn btn-1 btn-primary" data-toggle="modal" data-target="#proveedor">Agregar
+                    Proveedor</button>
                 </div>
 
 
@@ -272,30 +265,27 @@
                       <thead>
 
                         <tr>
-                          <th style="width: 5%">Id Compra</th>
-                          <th style="width: 5%">Id Producto</th>
-                          <th style="width: 10%">Codigo Proveedor</th>
-                          <th style="width: 10%">Categoría</th>
-                          <th style="width: 10%">Nombre</th>
-                          <th style="width: 10%">Descripción</th>
-                          <th style="width: 10%">Precio</th>
-                          <th style="width: 10%">Cantidad</th>
-                          <th style="width: 10%">Fecha</th>
+                          <th style="width: 15%">Codigo</th>
+                          <th style="width: 15%">Nombre</th>
+                          <th style="width: 15%">Banco</th>
+                          <th style="width: 15%">Numero Cuenta</th>
+                          <th style="width: 15%">Correo</th>
+                          <th style="width: 15%">Telefono</th>
+                          <th style="width: 15%">Direccion</th>
+                         
                         </tr>
                       </thead>
                       <tbody>
 
 
                         <tr>
-                          <td style="width: 5%;"></td>
-                          <td style="width: 5%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
-                          <td style="width: 10%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
+                          <td style="width: 15%;"></td>
                           <td>
                             <button class="btn btn-block btn-warning" data-toggle="modal" data-target="#editar">Editar </button>
                             <button class="btn btn-block btn-danger" data-toggle="modal" data-target="#eliminar">Eliminar</button>
@@ -313,8 +303,9 @@
           </div>
       </section>
 
-      <!----agregar compra----->
-      <div class="modal fade" rol="dialog" id="compra">
+      
+      <!------proveedor------->
+      <div class="modal fade" rol="dialog" id="proveedor">
         <div class="modal-dialog">
 
           <div class="modal-content">
@@ -322,62 +313,49 @@
             <form method="post" role="form">
 
               <div class="modal-header">
-                <h3>Gestionar Compra</h3>
+                <h3>Agregar Proveedor</h3>
               </div>
 
               <div class="modal-body">
 
                 <div class="box-body">
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Id Producto</label>
-                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-                  </div>
-                  <div class="form-group">
                     <label for="exampleInputPassword1">Codigo Proveedor</label>
                     <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
                   </div>
-                  <label>CATEGORÍA</label>
-                  <select name="sexo" id="sexo" class="form-control">
-                    <option value="1">DIDACTICO</option>
-                    <option value="0">CONSTRUCCION</option>
-                  </select><br />
+                  
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nombre</label>
                     <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
                   </div>
                   <div class="form-group">
-                    <label>Descripcion</label>
+                    <label for="exampleInputPassword1">Banco</label>
+                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Numero Cuenta</label>
+                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Correo Electronico</label>
+                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+                  </div>
+                  <label>Telefono:</label>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label>Direccion</label>
                     <textarea name="textarea" rows="3" class="form-control" placeholder="Enter ..."></textarea>
                     </select><br />
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Precio</label>
-                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Cantidad</label>
-                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Id Proveedor</label>
-                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Fecha</label>
-                    <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-                  </div>
-                  <label>Opcion de Pago:</label>
-                  <select name="sexo" id="sexo" class="form-control">
-                    <option value="1">Credito</option>
-                    <option value="0">Debito</option>
-
-                  </select><br />
+                
                 </div>
               </div>
 
               <div class="modal-footer">
 
-                <button type="button" class="btn btn-primary"></i> Agregar Compra</button>
+                <button type="button" class="btn btn-primary"></i>Añadir Proveedor</button>
 
                 <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i>
                   Cancelar</button>
@@ -389,7 +367,7 @@
         </div>
 
         </form>
-        
+
       </div>
 
     </div>
@@ -403,52 +381,43 @@
         <form method="post" role="form">
 
           <div class="modal-header">
-            <h3>Editar Compra</h3>
+            <h3>Editar Proveedor</h3>
           </div>
 
           <div class="modal-body">
 
             <div class="box-body">
               <div class="form-group">
-                <label for="exampleInputPassword1">Id Producto</label>
+                <label for="exampleInputPassword1">Codrigo Proveedor</label>
                 <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
               </div>
-              <label>CATEGORÍA</label>
-              <select name="sexo" id="sexo" class="form-control">
-                <option value="1">DIDACTICO</option>
-                <option value="0">CONSTRUCCION</option>
-              </select><br />
+              
               <div class="form-group">
                 <label for="exampleInputPassword1">Nombre</label>
                 <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
               </div>
               <div class="form-group">
-                <label>Descripcion</label>
+                <label for="exampleInputPassword1">Banco</label>
+                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Numero Cuenta</label>
+                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Correo Electronico</label>
+                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+              </div>
+              <label>Telefono:</label>
+              <div class="form-group">
+                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
+              </div>
+              <div class="form-group">
+                <label>Direccion</label>
                 <textarea name="textarea" rows="3" class="form-control" placeholder="Enter ..."></textarea>
                 </select><br />
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Precio</label>
-                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Cantidad</label>
-                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Id Proveedor</label>
-                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Fecha</label>
-                <input type="password" class="form-control" id="claveActual" name="claveActual" placeholder="">
-              </div>
-              <label>Opcion de Pago:</label>
-              <select name="sexo" id="sexo" class="form-control">
-                <option value="1">Credito</option>
-                <option value="0">Debito</option>
-
-              </select><br />
+              
             </div>
           </div>
 
