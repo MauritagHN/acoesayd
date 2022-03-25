@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planilla</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index1.html" class="nav-link">Inicio</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href=# class="brand-link">
+    <img src="../../img/logo.jpg" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light">ACOES</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a href="#" class="d-block">Alexander Pierce</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Personas
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../personas/estudiante.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Estudiantes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../personas/coordinadores.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Coordinadores</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Maestros</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../personas/Proveedores.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Proveedores</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
+            <p>
+              Planilla
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-truck"></i>
+            <p>
+              Inventario y Transporte
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../inventario/inventario.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Inventario</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../inventario/Transporte.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Transporte</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../compras/Compras.html" class="nav-link">
+            <i class="nav-icon fas fa-shopping-cart"></i>
+            <p>
+              Compras
+            </p>
+          </a>
+        </li>
+          <ul class="nav nav-treeview">
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-folder-open"></i>
+            <p>
+              Seguimiento
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../seguimiento/seguimiento.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Proyectos</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-file"></i>
+            <p>
+              Reportes
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../forms/general.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>General Elements</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../forms/advanced.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Advanced Elements</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../forms/editors.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Editors</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../forms/validation.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Validation</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#" class="nav-link">
+            
+              <center>
+                <a class="btn btn-danger btn-sm" href="#" style.display="none">
+                  Salir 
+                </a>
+                
+                </center>
+            </i>        
+              
+            
+          </a>
+          
+        </li>
+  </div>
+  <!-- /.sidebar -->
+</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Planilla</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addMaestro">
+                <i class="fa-solid fa-user-plus"></i>Nuevo</button>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Codigo</th>
+                    <th>ID Maestro</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Fecha pago</th>
+                    <th>Incentivo</th>
+                    <th>Descripcion incentivo</th>
+                    <th>Acciones</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>02</td>
+                    <td>Francisco</td>
+                    <td>López</td>
+                    <td>3-04-1973</td>
+                    <td>9700-8800</td>
+                    <td>0801-1973-78342</td>
+                    <td>Las vegas</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                      <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Codigo</th>
+                      <th>ID Maestro</th>
+                      <th>Nombre</th>
+                      <th>Apellidos</th>
+                      <th>Fecha pago</th>
+                      <th>Incentivo</th>
+                      <th>Descripcion incentivo</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy;.</strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+</body>
+</html>
+
+<!--Boton editar-->
+
+<!-- Modal -->
+<div class="modal fade" id="editMaestro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="from-group col-md-2">
+              <label>Codigo</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="from-group col-md-2">
+              <label>ID Maestro</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-4">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label>Apellidos</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label class="form-label">Fecha pago</label>
+              <input class="form-control input-sm" type="date" id="" required>
+            </div>
+            <div class="col-md-4">
+              <label>Incentivo</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+              <label>Descripción</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Agregar nuevo Coordinador-->
+
+<!-- Modal -->
+<div class="modal fade" id="addMaestro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Planilla</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="from-group col-md-2">
+              <label>Codigo</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="from-group col-md-2">
+              <label>ID Maestro</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-4">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label>Apellidos</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label class="form-label">Fecha pago</label>
+              <input class="form-control input-sm" type="date" id="" required>
+            </div>
+            <div class="col-md-4">
+              <label>Incentivo</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+              <label>Descripción</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
