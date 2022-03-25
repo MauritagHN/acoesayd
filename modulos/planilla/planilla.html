@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coordinadores</title>
+  <title>Planilla</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -71,25 +71,25 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="estudiante.html" class="nav-link">
+              <a href="../personas/estudiante.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Estudiantes</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="coordinadores.html" class="nav-link">
+              <a href="../personas/coordinadores.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Coordinadores</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="maestro.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Maestros</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="Proveedores.html" class="nav-link">
+              <a href="../personas/Proveedores.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Proveedores</p>
               </a>
@@ -114,7 +114,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/modulos/inventario/inventario.html" class="nav-link">
+              <a href="../inventario/inventario.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Inventario</p>
               </a>
@@ -122,7 +122,7 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/modulos/inventario/Transporte.html" class="nav-link">
+              <a href="../inventario/Transporte.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Transporte</p>
               </a>
@@ -130,14 +130,16 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="/modulos/compras/Compras.html" class="nav-link">
+          <a href="../compras/Compras.html" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>
               Compras
-              
             </p>
           </a>
-          
+        </li>
+          <ul class="nav nav-treeview">
+            
+          </ul>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
@@ -218,12 +220,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Coordinadores</h1>
+            <h1>Planilla</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addCoordinador">
-                <i class="fa-solid fa-user-plus"></i>Agregar coordinador</button>
+              <button type="button" class="btn btn-success end" data-toggle="modal" data-target="#addMaestro">
+                <i class="fa-solid fa-user-plus"></i>Nuevo</button>
             </ol>
           </div>
         </div>
@@ -242,46 +244,43 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>ID Coordinador</th>
+                    <th>Codigo</th>
+                    <th>ID Maestro</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
-                    <th>Tipo coordinador</th>
-                    <th>Fecha nacimiento</th>
-                    <th>Teléfono</th>
-                    <th>Identidad</th>
-                    <th>Dirección</th>
+                    <th>Fecha pago</th>
+                    <th>Incentivo</th>
+                    <th>Descripcion incentivo</th>
                     <th>Acciones</th>
-                    </tr>
+                  </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td>01</td>
-                    <td>Kevin</td>
-                    <td>Palacios</td>
-                    <td>General</td>
-                    <td>01-01-1996</td>
-                    <td>8799-9999</td>
-                    <td>0801-1996-15174</td>
-                    <td>Los Llanos</td>
+                    <td>02</td>
+                    <td>Francisco</td>
+                    <td>López</td>
+                    <td>3-04-1973</td>
+                    <td>9700-8800</td>
+                    <td>0801-1973-78342</td>
+                    <td>Las vegas</td>
                     <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
                       <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editCoordinador"><i class="fa-solid fa-pen-to-square"></i></button>
+                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editMaestro"><i class="fa-solid fa-pen-to-square"></i></button>
                       </div>
                     </td>
                   </tr>
                   </tbody>
                   <tfoot>
-                  <tr>
-                    <th>ID Coordinador</th>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Tipo coordinador</th>
-                    <th>Fecha nacimiento</th>
-                    <th>Teléfono</th>
-                    <th>Identidad</th>
-                    <th>Dirección</th>
-                    <th>Acciones</th>                    
-                  </tr>
+                    <tr>
+                      <th>Codigo</th>
+                      <th>ID Maestro</th>
+                      <th>Nombre</th>
+                      <th>Apellidos</th>
+                      <th>Fecha pago</th>
+                      <th>Incentivo</th>
+                      <th>Descripcion incentivo</th>
+                      <th>Acciones</th>
+                    </tr>
                   </tfoot>
                 </table>
               </div>
@@ -359,7 +358,7 @@
 <!--Boton editar-->
 
 <!-- Modal -->
-<div class="modal fade" id="editCoordinador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="editMaestro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -371,9 +370,13 @@
       <div class="modal-body">
         <form>
           <div class="form-row">
-            <div class="col-md-4">
-              <label>ID Coordinador</label>
-              <input type="text" class="form-control">
+            <div class="from-group col-md-2">
+              <label>Codigo</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="from-group col-md-2">
+              <label>ID Maestro</label>
+              <input type="text" class="form-control" >
             </div>
             <div class="col-md-4">
               <label>Nombre</label>
@@ -387,34 +390,19 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputState">Tipo coordinador</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label class="form-label">Fecha nacimiento</label>
+              <label class="form-label">Fecha pago</label>
               <input class="form-control input-sm" type="date" id="" required>
             </div>
             <div class="col-md-4">
-              <label>Teléfono</label>
-              <input type="text" class="form-control">
+              <label>Incentivo</label>
+              <input type="text" class="form-control" placeholder="">
             </div>
-            
-          </div>
-
-          <div class="form-row">   
             <div class="col-md-4">
-              <label>Identidad</label>
-              <input type="text" class="form-control">
-            </div>         
-            <div class="form-group col-md-8">
-              <label for="inputAddress">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <label>Descripción</label>
+              <input type="text" class="form-control" placeholder="">
             </div>
           </div>
- 
+          
         </form>
       </div>
       <div class="modal-footer">
@@ -428,11 +416,11 @@
 <!--Agregar nuevo Coordinador-->
 
 <!-- Modal -->
-<div class="modal fade" id="addCoordinador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addMaestro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar coordinador</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Planilla</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -440,47 +428,36 @@
       <div class="modal-body">
         <form>
           <div class="form-row">
-            <div class="from-group col-md-4">
-              <label>Primer nombre</label>
-              <input type="text" class="form-control" placeholder="Primer nombre">
+            <div class="from-group col-md-2">
+              <label>Codigo</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="from-group col-md-2">
+              <label>ID Maestro</label>
+              <input type="text" class="form-control" >
             </div>
             <div class="col-md-4">
-              <label>Segundo nombre</label>
-              <input type="text" class="form-control" placeholder="Segundo nombre">
+              <label>Nombre</label>
+              <input type="text" class="form-control">
             </div>
             <div class="col-md-4">
               <label>Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos">
+              <input type="text" class="form-control">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label class="form-label">Fecha nacimiento</label>
+              <label class="form-label">Fecha pago</label>
               <input class="form-control input-sm" type="date" id="" required>
             </div>
             <div class="col-md-4">
-              <label>Teléfono</label>
+              <label>Incentivo</label>
               <input type="text" class="form-control" placeholder="">
             </div>
             <div class="col-md-4">
-              <label>Identidad</label>
+              <label>Descripción</label>
               <input type="text" class="form-control" placeholder="">
-            </div>
-          </div>
-
-          <div class="form-row">
-
-            <div class="form-group col-md-3">
-              <label for="inputState">Tipo coordinador</label>
-              <select id="inputState" class="form-control">
-                <option selected>Selecciona...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputAddress">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
           </div>
           
