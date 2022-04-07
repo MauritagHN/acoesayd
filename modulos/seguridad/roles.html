@@ -67,25 +67,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="estudiante.html" class="nav-link">
+                <a href="../personas/estudiante.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Estudiantes</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="coordinadores.html" class="nav-link">
+                <a href="../personas/coordinadores.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Coordinadores</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="maestro.html" class="nav-link">
+                <a href="../personas/maestro.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Maestros</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Proveedores.html" class="nav-link">
+                <a href="../personas/Proveedores.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Proveedores</p>
                 </a>
@@ -110,7 +110,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/modulos/inventario/inventario.html" class="nav-link">
+                <a href="../inventario/inventario.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inventario</p>
                 </a>
@@ -118,7 +118,7 @@
             </ul>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/modulos/inventario/Transporte.html" class="nav-link">
+                <a href="../inventario/Transporte.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Transporte</p>
                 </a>
@@ -295,10 +295,12 @@
                       <thead>
                         <tr>
                           <th>Rol de usuario</th>
-                          <th>Ver</th>
-                          <th>Editar</th>
-                          <th>Eliminar</th>
-                          <th>Guardar</th>
+                          <th>Personas</th>
+                          <th>Inventario</th>
+                          <th>Compras</th>
+                          <th>Seguimiento</th>
+                          <th>Reportes</th>
+                          <th>Roles</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -306,6 +308,16 @@
                           <td>Administrativo</td>
                           <td>
                             <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" id="">
                             </div>
                           </td>
@@ -416,7 +428,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Nuevo Rol</h5>
+        <h5 class="modal-title">Editar Rol</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
