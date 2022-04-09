@@ -67,25 +67,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="estudiante.html" class="nav-link">
+                <a href="../personas/estudiante.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Estudiantes</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="coordinadores.html" class="nav-link">
+                <a href="../personas/coordinadores.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Coordinadores</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="maestro.html" class="nav-link">
+                <a href="../personas/maestro.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Maestros</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Proveedores.html" class="nav-link">
+                <a href="../personas/Proveedores.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Proveedores</p>
                 </a>
@@ -110,7 +110,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/modulos/inventario/inventario.html" class="nav-link">
+                <a href="../inventario/inventario.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inventario</p>
                 </a>
@@ -118,7 +118,7 @@
             </ul>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/modulos/inventario/Transporte.html" class="nav-link">
+                <a href="../inventario/Transporte.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Transporte</p>
                 </a>
@@ -156,10 +156,39 @@
               <i class="nav-icon fas fa-file"></i>
               <p>
                 Reportes
-                <i class="fas fa-angle-left right"></i>
+                
               </p>
             </a>
             
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-lock "></i>
+              <p>
+               Seguridad
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/modulos/seguridad/roles.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Roles</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/modulos/seguridad/gestion bd.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestion Base de datos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/modulos/seguridad/bitacora.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bitacora</p>
+                </a>
+              </li>
+            </ul>
           </li>
           
           <li>
@@ -250,6 +279,99 @@
       <!-- /.card -->
     </section>
     <!-- /.content -->
+    <!--segundo grid-->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Permisos de roles de usuarios</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+        <!-- Main content -->
+        <section class="content">
+          <div class="card">
+             <div class="card-body">
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-tools">
+                      <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar">
+    
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Rol de usuario</th>
+                          <th>Personas</th>
+                          <th>Inventario</th>
+                          <th>Compras</th>
+                          <th>Seguimiento</th>
+                          <th>Reportes</th>
+                          <th>Roles</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Administrativo</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="">
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>        </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </section>
+        <!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -327,7 +449,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Nuevo Rol</h5>
+        <h5 class="modal-title">Editar Rol</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -364,3 +486,46 @@
     </div>
   </div>
 </div>
+<!--
+<div class="modal" id="editarTipouser" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar tipo de usuario</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Descripcion</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="nombre del rol">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Descripción</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Estado</label>
+            <div class="col-sm-10">
+              <select id="inputState" class="form-control">
+                <option selected>Selecciona...</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+              </select>            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->

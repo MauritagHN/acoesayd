@@ -1,746 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | ChartJS</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
-    <!-- uPlot -->
-    <link rel="stylesheet" href="../../plugins/uplot/uPlot.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- uPlot -->
+  <link rel="stylesheet" href="../../plugins/uplot/uPlot.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
+
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index1.html" class="nav-link">Inicio</a>
-      </li>
-      
-    </ul>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index1.html" class="nav-link">Inicio</a>
+        </li>
+
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href=# class="brand-link">
-      <img src="../../img/logo.jpg" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">ACOES</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href=# class="brand-link">
+        <img src="../../img/logo.jpg" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">ACOES</span>
+      </a>
+    
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="../personas/perfil.html" class="d-block">Alexander Pierce</a>
+          </div>
         </div>
-        <div class="info">
-          <a href="modulos/personas/perfil.html" class="d-block">Alexander Pierce</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
-                  <p>
-                    Personas
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../personas/estudiante.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Estudiantes</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../personas/coordinadores.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Coordinadores</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../personas/maestro.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Maestros</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../personas/Proveedores.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Proveedores</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="../planilla/planilla.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Planilla
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-truck"></i>
-                  <p>
-                    Inventario y Transporte
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../inventario/inventario.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Inventario</p>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../inventario/Transporte.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Transporte</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="../compras/Compras.html" class="nav-link">
-                  <i class="nav-icon fas fa-shopping-cart"></i>
-                  <p>
-                    Compras
-                  </p>
-                </a>
-              </li>
+    
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Personas
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
               <ul class="nav nav-treeview">
-  
+                <li class="nav-item">
+                  <a href="../personas/estudiante.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Estudiantes</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../personas/coordinadores.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Coordinadores</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../personas/maestro.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Maestros</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../personas/Proveedores.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Proveedores</p>
+                  </a>
+                </li>
               </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-folder-open"></i>
-                  <p>
-                    Seguimiento
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../seguimiento/seguimiento.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Proyectos</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href=".//reportes.html" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
-                  <p>
-                    Reportes
-  
-                  </p>
-                </a>
-  
-              </li>
-  
-              <li>
-                <a href="#" class="nav-link">
-  
+            </li>
+            <li class="nav-item">
+              <a href="../planilla/planilla.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Planilla
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-truck"></i>
+                <p>
+                  Inventario y Transporte
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../inventario/inventario.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Inventario</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../inventario/Transporte.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Transporte</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../compras/Compras.html" class="nav-link">
+                <i class="nav-icon fas fa-shopping-cart"></i>
+                <p>
+                  Compras
+                  
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-folder-open"></i>
+                <p>
+                  Seguimiento
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../seguimiento/seguimiento.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Proyectos</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../graph/reportes.html" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  Reportes
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-lock "></i>
+                <p>
+                 Seguridad
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../seguridad/roles.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Roles</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../seguridad/gestion bd.html bd.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Gestion Base de datos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../seguridad/bitacora.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Bitacora</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                
                   <center>
                     <a class="btn btn-danger btn-sm" href="/login.html" style.display="none">
-                      Salir
+                      Salir 
                     </a>
-  
-                  </center>
-                  </i>
-  
-  
-                </a>
-  
-              </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Reportes</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/index1.html">Inicio</a></li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- AREA CHART -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Aprobados y Reprobados</h3>
+                    </center>
+                </i>        
+                  
                 
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                </div>
-              </div>
-              <div class="d-flex flex-row justify-content-end">
-                <span class="mr-2">
-                  <i class="fas fa-square text-primary"></i> Aprobados
-                </span>
+              </a>
+              
+            </li>
+      </div>
+      <!-- /.sidebar -->
+    </aside>
 
-                <span>
-                  <i class="fas fa-square text-gray"></i> Reprobados
-                </span>
-              </div>
-              <!-- /.card-body -->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Reportes</h1>
             </div>
-            <!-- /.card -->
-
-            <!-- DONUT CHART -->
-            <div class="card card-danger">
-              <div class="card-header">
-                <h3 class="card-title">Estudiantes Registrados</h3>
-
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <div class="d-flex flex-row justify-content-end">
-                <span class="mr-2">
-                  <i class="fas fa-square text-primary"></i>Comunidad 1 
-                </span>
-                <span>
-                  <i class="fas fa-square text-gray"></i>Comunidad 2 
-                </span>
-                <span>
-                  <i class="fas fa-square text-danger"></i>Comunidad 3 
-                </span>
-              </div>
-              <div class="d-flex flex-row justify-content-end">
-                <span class="mr-2">
-                  <i class="fas fa-square text-success"></i>Comunidad 4 
-                </span>
-                <span>
-                  <i class="fas fa-square text-warning"></i>Comunidad 5 
-                <span>
-                  <i class="fas fa-square text-info"></i>Comunidad 6 
-                </span>
-              </div>
-              <!-- /.card-body -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="/index1.html">Inicio</a></li>
+              </ol>
             </div>
-            <!-- /.card -->
-
-            <!-- PIE CHART -->
-            <div class="card card-danger">
-              <div class="card-header">
-                <h3 class="card-title">Gastos Totales</h3>
-
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <div class="d-flex flex-row justify-content-end">
-                <span class="mr-2">
-                  <i class="fas fa-square text-primary"></i> Material Didactico
-                </span>
-                <span>
-                  <i class="fas fa-square text-gray"></i> Material de Construccion 
-                </span>
-                <span>
-                  <i class="fas fa-square text-danger"></i> Planilla
-                </span>
-              </div>
-              <div class="d-flex flex-row justify-content-end">
-                <span class="mr-2">
-                  <i class="fas fa-square text-success"></i> Compras
-                </span>
-                <span>
-                  <i class="fas fa-square text-warning"></i> Transporte 
-                </span>
-                <span>
-                  <i class="fas fa-square text-info"></i> Proyectos
-                </span>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
           </div>
-          <!-- /.col (LEFT) -->
-          <div class="col-md-6">
-            <!-- LINE CHART -->
-            <div class="card card-info">
-              <div class="card-header">
-                <h3 class="card-title">Inventario</h3>
+        </div><!-- /.container-fluid -->
+      </section>
 
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- AREA CHART -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Aprobados y Reprobados</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
                 </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                <div class="card-body">
+                  <div class="chart">
+                    <canvas id="areaChart"
+                      style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                   <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> Marterial Didactico
+                    <i class="fas fa-square text-primary"></i> Aprobados
                   </span>
-  
+
+                  <span>
+                    <i class="fas fa-square text-gray"></i> Reprobados
+                  </span>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- DONUT CHART -->
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">Estudiantes Registrados</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="donutChart"
+                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-primary"></i>Comunidad 1
+                  </span>
+                  <span>
+                    <i class="fas fa-square text-gray"></i>Comunidad 2
+                  </span>
+                  <span>
+                    <i class="fas fa-square text-danger"></i>Comunidad 3
+                  </span>
+                </div>
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-success"></i>Comunidad 4
+                  </span>
+                  <span>
+                    <i class="fas fa-square text-warning"></i>Comunidad 5
+                    <span>
+                      <i class="fas fa-square text-info"></i>Comunidad 6
+                    </span>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- PIE CHART -->
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">Gastos Totales</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="pieChart"
+                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-primary"></i> Material Didactico
+                  </span>
                   <span>
                     <i class="fas fa-square text-gray"></i> Material de Construccion
                   </span>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- BAR CHART -->
-            <div class="card card-success">
-              <div class="card-header">
-                <h3 class="card-title">Planilla</h3>
-
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  <span>
+                    <i class="fas fa-square text-danger"></i> Planilla
+                  </span>
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                   <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> Año Actual
+                    <i class="fas fa-square text-success"></i> Compras
                   </span>
-  
                   <span>
-                    <i class="fas fa-square text-gray"></i> Año Anterior
+                    <i class="fas fa-square text-warning"></i> Transporte
                   </span>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- STACKED BAR CHART -->
-            <div class="card card-success">
-              <div class="card-header">
-                <h3 class="card-title">Gasto de proyecto</h3>
-
-                <div class="card-tools">
-                  <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                </div>
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> Didactico
-                  </span>
-  
                   <span>
-                    <i class="fas fa-square text-gray"></i> Construccion
+                    <i class="fas fa-square text-info"></i> Proyectos
                   </span>
                 </div>
+                <!-- /.card-body -->
               </div>
-              <!-- /.card-body -->
-            </div>
-            
-            <!-- /.card -->
+              <!-- /.card -->
 
+            </div>
+            <!-- /.col (LEFT) -->
+            <div class="col-md-6">
+              <!-- LINE CHART -->
+              <div class="card card-info">
+                <div class="card-header">
+                  <h3 class="card-title">Inventario</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="chart">
+                    <canvas id="lineChart"
+                      style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
+                  <div class="d-flex flex-row justify-content-end">
+                    <span class="mr-2">
+                      <i class="fas fa-square text-primary"></i> Marterial Didactico
+                    </span>
+
+                    <span>
+                      <i class="fas fa-square text-gray"></i> Material de Construccion
+                    </span>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- BAR CHART -->
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">Planilla</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="chart">
+                    <canvas id="barChart"
+                      style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
+                  <div class="d-flex flex-row justify-content-end">
+                    <span class="mr-2">
+                      <i class="fas fa-square text-primary"></i> Año Actual
+                    </span>
+
+                    <span>
+                      <i class="fas fa-square text-gray"></i> Año Anterior
+                    </span>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- STACKED BAR CHART -->
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">Gasto de proyecto</h3>
+
+                  <div class="card-tools">
+                    <a href="/modulos/graph/Reportes.pdf">Ver Reporte</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="chart">
+                    <canvas id="stackedBarChart"
+                      style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
+                  <div class="d-flex flex-row justify-content-end">
+                    <span class="mr-2">
+                      <i class="fas fa-square text-primary"></i> Didactico
+                    </span>
+
+                    <span>
+                      <i class="fas fa-square text-gray"></i> Construccion
+                    </span>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+              <!-- /.card -->
+
+            </div>
+            <!-- /.col (RIGHT) -->
           </div>
-          <!-- /.col (RIGHT) -->
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <!-- Main content -->
- 
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+    <!-- /.content-wrapper -->
+    <!-- Main content -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Add Content Here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+      </div>
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="../../plugins/chart.js/Chart.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- uPlot -->
-<script src="../../plugins/uplot/uPlot.iife.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Add Content Here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
 
-<!-- Page specific script -->
-<script>
-  $(function () {
-    /* ChartJS
-     * -------
-     * Here we will create a few charts using ChartJS
-     */
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="../../plugins/chart.js/Chart.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- uPlot -->
+  <script src="../../plugins/uplot/uPlot.iife.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
 
-    //--------------
-    //- AREA CHART -
-    //--------------
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      /* ChartJS
+       * -------
+       * Here we will create a few charts using ChartJS
+       */
 
-    // Get context with jQuery - using jQuery's .get() method.
-    var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+      //--------------
+      //- AREA CHART -
+      //--------------
 
-    var areaChartData = {
-      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [
-        {
-          label               : 'Digital Goods',
-          backgroundColor     : 'rgba(60,141,188,0.9)',
-          borderColor         : 'rgba(60,141,188,0.8)',
-          pointRadius          : false,
-          pointColor          : '#3b8bba',
-          pointStrokeColor    : 'rgba(60,141,188,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [28, 48, 40, 19, 86, 27, 90]
-        },
-        {
-          label               : 'Electronics',
-          backgroundColor     : 'rgba(210, 214, 222, 1)',
-          borderColor         : 'rgba(210, 214, 222, 1)',
-          pointRadius         : false,
-          pointColor          : 'rgba(210, 214, 222, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data                : [65, 59, 80, 81, 56, 55, 40]
-        },
-      ]
-    }
+      // Get context with jQuery - using jQuery's .get() method.
+      var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
 
-    var areaChartOptions = {
-      maintainAspectRatio : false,
-      responsive : true,
-      legend: {
-        display: false
-      },
-      scales: {
-        xAxes: [{
-          gridLines : {
-            display : false,
-          }
-        }],
-        yAxes: [{
-          gridLines : {
-            display : false,
-          }
-        }]
+      var areaChartData = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+          {
+            label: 'Digital Goods',
+            backgroundColor: 'rgba(60,141,188,0.9)',
+            borderColor: 'rgba(60,141,188,0.8)',
+            pointRadius: false,
+            pointColor: '#3b8bba',
+            pointStrokeColor: 'rgba(60,141,188,1)',
+            pointHighlightFill: '#fff',
+            pointHighlightStroke: 'rgba(60,141,188,1)',
+            data: [28, 48, 40, 19, 86, 27, 90]
+          },
+          {
+            label: 'Electronics',
+            backgroundColor: 'rgba(210, 214, 222, 1)',
+            borderColor: 'rgba(210, 214, 222, 1)',
+            pointRadius: false,
+            pointColor: 'rgba(210, 214, 222, 1)',
+            pointStrokeColor: '#c1c7d1',
+            pointHighlightFill: '#fff',
+            pointHighlightStroke: 'rgba(220,220,220,1)',
+            data: [65, 59, 80, 81, 56, 55, 40]
+          },
+        ]
       }
-    }
 
-    // This will get the first returned node in the jQuery collection.
-    new Chart(areaChartCanvas, {
-      type: 'line',
-      data: areaChartData,
-      options: areaChartOptions
-    })
+      var areaChartOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+          display: false
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {
+              display: false,
+            }
+          }],
+          yAxes: [{
+            gridLines: {
+              display: false,
+            }
+          }]
+        }
+      }
 
-    //-------------
-    //- LINE CHART -
-    //--------------
-    var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
-    var lineChartOptions = $.extend(true, {}, areaChartOptions)
-    var lineChartData = $.extend(true, {}, areaChartData)
-    lineChartData.datasets[0].fill = false;
-    lineChartData.datasets[1].fill = false;
-    lineChartOptions.datasetFill = false
+      // This will get the first returned node in the jQuery collection.
+      new Chart(areaChartCanvas, {
+        type: 'line',
+        data: areaChartData,
+        options: areaChartOptions
+      })
 
-    var lineChart = new Chart(lineChartCanvas, {
-      type: 'line',
-      data: lineChartData,
-      options: lineChartOptions
-    })
+      //-------------
+      //- LINE CHART -
+      //--------------
+      var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+      var lineChartOptions = $.extend(true, {}, areaChartOptions)
+      var lineChartData = $.extend(true, {}, areaChartData)
+      lineChartData.datasets[0].fill = false;
+      lineChartData.datasets[1].fill = false;
+      lineChartOptions.datasetFill = false
 
-    //-------------
-    //- DONUT CHART -
-    //-------------
-    // Get context with jQuery - using jQuery's .get() method.
-    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
-    var donutData        = {
-      labels: [
+      var lineChart = new Chart(lineChartCanvas, {
+        type: 'line',
+        data: lineChartData,
+        options: lineChartOptions
+      })
+
+      //-------------
+      //- DONUT CHART -
+      //-------------
+      // Get context with jQuery - using jQuery's .get() method.
+      var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+      var donutData = {
+        labels: [
           'Chrome',
           'IE',
           'FireFox',
           'Safari',
           'Opera',
           'Navigator',
-      ],
-      datasets: [
-        {
-          data: [700,500,400,600,300,100],
-          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+        ],
+        datasets: [
+          {
+            data: [700, 500, 400, 600, 300, 100],
+            backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+          }
+        ]
+      }
+      var donutOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+      }
+      //Create pie or douhnut chart
+      // You can switch between pie and douhnut using the method below.
+      new Chart(donutChartCanvas, {
+        type: 'doughnut',
+        data: donutData,
+        options: donutOptions
+      })
+
+      //-------------
+      //- PIE CHART -
+      //-------------
+      // Get context with jQuery - using jQuery's .get() method.
+      var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+      var pieData = donutData;
+      var pieOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+      }
+      //Create pie or douhnut chart
+      // You can switch between pie and douhnut using the method below.
+      new Chart(pieChartCanvas, {
+        type: 'pie',
+        data: pieData,
+        options: pieOptions
+      })
+
+      //-------------
+      //- BAR CHART -
+      //-------------
+      var barChartCanvas = $('#barChart').get(0).getContext('2d')
+      var barChartData = $.extend(true, {}, areaChartData)
+      var temp0 = areaChartData.datasets[0]
+      var temp1 = areaChartData.datasets[1]
+      barChartData.datasets[0] = temp1
+      barChartData.datasets[1] = temp0
+
+      var barChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        datasetFill: false
+      }
+
+      new Chart(barChartCanvas, {
+        type: 'bar',
+        data: barChartData,
+        options: barChartOptions
+      })
+
+      //---------------------
+      //- STACKED BAR CHART -
+      //---------------------
+      var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+      var stackedBarChartData = $.extend(true, {}, barChartData)
+
+      var stackedBarChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          xAxes: [{
+            stacked: true,
+          }],
+          yAxes: [{
+            stacked: true
+          }]
         }
-      ]
-    }
-    var donutOptions     = {
-      maintainAspectRatio : false,
-      responsive : true,
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    new Chart(donutChartCanvas, {
-      type: 'doughnut',
-      data: donutData,
-      options: donutOptions
-    })
-
-    //-------------
-    //- PIE CHART -
-    //-------------
-    // Get context with jQuery - using jQuery's .get() method.
-    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-    var pieData        = donutData;
-    var pieOptions     = {
-      maintainAspectRatio : false,
-      responsive : true,
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    new Chart(pieChartCanvas, {
-      type: 'pie',
-      data: pieData,
-      options: pieOptions
-    })
-
-    //-------------
-    //- BAR CHART -
-    //-------------
-    var barChartCanvas = $('#barChart').get(0).getContext('2d')
-    var barChartData = $.extend(true, {}, areaChartData)
-    var temp0 = areaChartData.datasets[0]
-    var temp1 = areaChartData.datasets[1]
-    barChartData.datasets[0] = temp1
-    barChartData.datasets[1] = temp0
-
-    var barChartOptions = {
-      responsive              : true,
-      maintainAspectRatio     : false,
-      datasetFill             : false
-    }
-
-    new Chart(barChartCanvas, {
-      type: 'bar',
-      data: barChartData,
-      options: barChartOptions
-    })
-
-    //---------------------
-    //- STACKED BAR CHART -
-    //---------------------
-    var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
-    var stackedBarChartData = $.extend(true, {}, barChartData)
-
-    var stackedBarChartOptions = {
-      responsive              : true,
-      maintainAspectRatio     : false,
-      scales: {
-        xAxes: [{
-          stacked: true,
-        }],
-        yAxes: [{
-          stacked: true
-        }]
       }
-    }
 
-    new Chart(stackedBarChartCanvas, {
-      type: 'bar',
-      data: stackedBarChartData,
-      options: stackedBarChartOptions
+      new Chart(stackedBarChartCanvas, {
+        type: 'bar',
+        data: stackedBarChartData,
+        options: stackedBarChartOptions
+      })
     })
-  })
-  
-</script>
-<script>
-  $(function () {
-    /* uPlot
-     * -------
-     * Here we will create a few charts using uPlot
-     */
 
-    function getSize(elementId) {
-      return {
-        width: document.getElementById(elementId).offsetWidth,
-        height: document.getElementById(elementId).offsetHeight,
+  </script>
+  <script>
+    $(function () {
+      /* uPlot
+       * -------
+       * Here we will create a few charts using uPlot
+       */
+
+      function getSize(elementId) {
+        return {
+          width: document.getElementById(elementId).offsetWidth,
+          height: document.getElementById(elementId).offsetHeight,
+        }
       }
-    }
 
-    let data = [
-      [0, 1, 2, 3, 4, 5, 6],
-      [28, 48, 40, 19, 86, 27, 90],
-      [65, 59, 80, 81, 56, 55, 40]
-    ];
+      let data = [
+        [0, 1, 2, 3, 4, 5, 6],
+        [28, 48, 40, 19, 86, 27, 90],
+        [65, 59, 80, 81, 56, 55, 40]
+      ];
 
-    //--------------
-    //- AREA CHART -
-    //--------------
+      //--------------
+      //- AREA CHART -
+      //--------------
 
-    const optsAreaChart = {
-      ... getSize('areaChart'),
-      scales: {
-        x: {
-          time: false,
+      const optsAreaChart = {
+        ...getSize('areaChart'),
+        scales: {
+          x: {
+            time: false,
+          },
+          y: {
+            range: [0, 100],
+          },
         },
-        y: {
-          range: [0, 100],
-        },
-      },
-      series: [
-        {},
-        {
-          fill: 'rgba(60,141,188,0.7)',
-          stroke: 'rgba(60,141,188,1)',
-        },
-        {
-          stroke: '#c1c7d1',
-          fill: 'rgba(210, 214, 222, .7)',
-        },
-      ],
-    };
+        series: [
+          {},
+          {
+            fill: 'rgba(60,141,188,0.7)',
+            stroke: 'rgba(60,141,188,1)',
+          },
+          {
+            stroke: '#c1c7d1',
+            fill: 'rgba(210, 214, 222, .7)',
+          },
+        ],
+      };
 
-    let areaChart = new uPlot(optsAreaChart, data, document.getElementById('areaChart'));
+      let areaChart = new uPlot(optsAreaChart, data, document.getElementById('areaChart'));
 
-    const optsLineChart = {
-      ... getSize('lineChart'),
-      scales: {
-        x: {
-          time: false,
+      const optsLineChart = {
+        ...getSize('lineChart'),
+        scales: {
+          x: {
+            time: false,
+          },
+          y: {
+            range: [0, 100],
+          },
         },
-        y: {
-          range: [0, 100],
-        },
-      },
-      series: [
-        {},
-        {
-          fill: 'transparent',
-          width: 5,
-          stroke: 'rgba(60,141,188,1)',
-        },
-        {
-          stroke: '#c1c7d1',
-          width: 5,
-          fill: 'transparent',
-        },
-      ],
-    };
+        series: [
+          {},
+          {
+            fill: 'transparent',
+            width: 5,
+            stroke: 'rgba(60,141,188,1)',
+          },
+          {
+            stroke: '#c1c7d1',
+            width: 5,
+            fill: 'transparent',
+          },
+        ],
+      };
 
-    let lineChart = new uPlot(optsLineChart, data, document.getElementById('lineChart'));
+      let lineChart = new uPlot(optsLineChart, data, document.getElementById('lineChart'));
 
-    window.addEventListener("resize", e => {
-      areaChart.setSize(getSize('areaChart'));
-      lineChart.setSize(getSize('lineChart'));
-    });
-  })
-</script>
+      window.addEventListener("resize", e => {
+        areaChart.setSize(getSize('areaChart'));
+        lineChart.setSize(getSize('lineChart'));
+      });
+    })
+  </script>
 </body>
+
 </html>
