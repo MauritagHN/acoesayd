@@ -393,12 +393,16 @@
                                                   <input type="number" id="inputEstimatedDuration" class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                  <label for="inputEstimatedDuration">Cantidad actual</label>
+                                                  <label for="inputEstimatedDuration">Cantidad depositada</label>
                                                   <input type="number" id="inputEstimatedDuration" class="form-control">
                                                 </div>
                                                 <div class="form-group">
                                                   <label for="inputEstimatedDuration">Codigo de proyecto asociado</label>
                                                   <input type="text" id="inputEstimatedDuration" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="inputEstimatedDuration">Porcentaje actual del proyecto</label>
+                                                  <input type="number" id="inputEstimatedDuration" class="form-control">
                                                 </div>
                                               </div>
                                               <!-- /.card-body -->
@@ -418,11 +422,90 @@
                               </div>
                             </div>   
                           </a>
+                          <br>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
                               Eliminar
                           </a>
+                          <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#historial-m">
+                            <i class="fa fa-history" aria-hidden="true">
+                            </i>
+                            Historial
+                        </a>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="historial-m">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <section class="content">
+                                    <div class="row">
+                                          <section class="content">
+                                            <div class="container-fluid">
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <center><h3>Historial Movimiento de proyecto</h3></center>
+                                                  <div class="card">
+                                                    <!-- /.card-header -->
+                                                    <div class="card-body">
+                                                      <table id="example1" class="table table-bordered table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                          <th>ID Proyecto</th>
+                                                          <th>Coidgo Financiamiento</th>
+                                                          <th>Tipo Movimiento</th>
+                                                          <th>Cantidad Usada</th>
+                                                          <th>Descripcion</th>
+                                                          <th>Saldo Utilizado</th>
+                                                          <th>Saldo Aprobado</th>
+                                                      
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                          <td>01</td>
+                                                          <td>12</td>
+                                                          <td>Deposito</td>
+                                                          <td>12,000</td>
+                                                          <td>Deposito por parte de la provincia XX</td>
+                                                          <td>15,000</td>
+                                                          <td>25,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>01</td>
+                                                          <td>12</td>
+                                                          <td>Debito</td>
+                                                          <td>5,000</td>
+                                                          <td>Compra de pupitres</td>
+                                                          <td>20,000</td>
+                                                          <td>25,000</td>
+                                                        </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <!-- /.card-body -->
+                                                  </div>
+                                                  <!-- /.card -->
+                                                </div>
+                                                <!-- /.col -->
+                                              </div>
+                                              <!-- /.row -->
+                                            </div>
+                                            <!-- /.container-fluid -->
+                                          </section>
+                                          <!-- /.card-body -->
+                                        
+                                        <!-- /.card -->
+                                      
+                                      
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <a href="#" class="btn btn-danger">Regresar</a>  
+                                      </div>
+                                    </div>
+                                  </section>
+                            </div>
+                          </div>
+                        </div>
                       </td>
                   </tr>
                   <tr>
@@ -571,11 +654,17 @@
                               </div>
                             </div>
                           </a>
+                          <br>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
                               Eliminar
                           </a>
+                          <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#historial-m">
+                            <i class="fa fa-history" aria-hidden="true">
+                            </i>
+                            Historial
+                        </a>
                       </td>
                       
                   </tr>
@@ -663,13 +752,14 @@
                                 <input type="number" id="inputEstimatedDuration" class="form-control">
                               </div>
                               <div class="form-group">
-                                <label for="inputEstimatedDuration">Cantidad actual</label>
+                                <label for="inputEstimatedDuration">Cantidad Inicial</label>
                                 <input type="number" id="inputEstimatedDuration" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="inputEstimatedDuration">Codigo de proyecto asociado</label>
                                 <input type="text" id="inputEstimatedDuration" class="form-control">
                               </div>
+                            
                             </div>
                             <!-- /.card-body -->
                           </div>
@@ -694,6 +784,7 @@
 
     </section>
     <!-- /.content -->
+    
   </div>
   <!-- /.content-wrapper -->
 
